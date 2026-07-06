@@ -104,6 +104,16 @@ Online_Shoppers_Purchase_Prediction_Project/
 └── README.md
 ```
 
+
+## מסמכי הגשה
+
+בתיקיית `report/` קיימים כמה מסמכים:
+
+- `final_report_hebrew.md` — הדוח הסופי של הפרויקט.
+- `project_full_explanation_hebrew.md` — דוח הסבר מלא, מפורט ואינטואיטיבי מהתחלה עד הסוף.
+- `report_summary_hebrew.md` — סיכום קצר של הפרויקט.
+- `model_improvement_section_hebrew.md` — פירוט ניסיון שיפור המודל.
+
 ## איך להריץ את הפרויקט
 
 להתקנת הספריות הדרושות:
