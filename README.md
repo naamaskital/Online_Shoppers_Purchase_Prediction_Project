@@ -43,6 +43,7 @@
 - Decision Tree
 - Random Forest
 - SVM
+- AdaBoost
 
 בנוסף, בוצעה בדיקה של השפעת חוסר איזון בין המחלקות, ונעשה ניסיון לשפר את Random Forest באמצעות Hyperparameter Tuning ו-Threshold Tuning.
 
@@ -96,6 +97,7 @@ Online_Shoppers_Purchase_Prediction_Project/
 ├── 04_feature_importance.py
 ├── 05_imbalance_comparison.py
 ├── 08_improve_random_forest.py
+├── 09_course_extensions.py
 ├── final_project_code.py
 ├── main.py
 ├── requirements.txt
@@ -124,7 +126,20 @@ python3 03_train_models.py
 python3 04_feature_importance.py
 python3 05_imbalance_comparison.py
 python3 08_improve_random_forest.py
+python3 09_course_extensions.py
 ```
+
+
+
+## הרחבות נוספות
+
+בנוסף למודלים המרכזיים, נוספו שתי הרחבות שמחוברות לחומר הקורס:
+
+- AdaBoost — אלגוריתם הגברה.
+- PCA — הורדת ממד לצורך אנליזה ויזואלית של הדאטה.
+
+AdaBoost נתן ביצועים טובים, אך Random Forest נשאר המודל הטוב ביותר לפי F1-score.  
+PCA הראה שאין הפרדה דו-ממדית מושלמת בין רכישות לאי רכישות, ולכן הבעיה דורשת שילוב של מספר מאפיינים.
 
 ## מסקנה
 
