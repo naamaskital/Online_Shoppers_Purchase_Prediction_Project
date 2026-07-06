@@ -1,0 +1,133 @@
+# Online Shoppers Purchase Prediction Project
+
+פרויקט בלמידת מכונה לחיזוי כוונת רכישה של מבקרים באתר קניות אונליין.
+
+## מטרת הפרויקט
+
+מטרת הפרויקט היא לחזות האם ביקור של משתמש באתר קניות אונליין יסתיים ברכישה או לא.
+
+עמודת המטרה היא `Revenue`, ולכן מדובר בבעיית סיווג בינארי.
+
+## תיאור הדאטה
+
+הפרויקט מבוסס על Online Shoppers Purchasing Intention Dataset.
+
+הדאטה כולל 12,330 ביקורים באתר קניות אונליין.
+
+כל שורה מייצגת ביקור אחד באתר, והמאפיינים מתארים את התנהגות המשתמש במהלך הביקור.
+
+המאפיינים כוללים בין היתר:
+
+- מספר דפים שבהם המשתמש ביקר
+- משך השהייה בדפים
+- שיעורי יציאה ונטישה
+- ערך הדפים
+- חודש הביקור
+- סוג המשתמש
+- מקור התנועה
+- האם הביקור היה בסוף שבוע
+
+## שאלות המחקר
+
+1. האם ניתן לחזות מראש האם מבקר באתר יבצע רכישה לפי ההתנהגות שלו באתר?
+2. אילו מאפיינים משפיעים יותר על הסיכוי לרכישה?
+3. איזה מודל למידת מכונה נותן את הביצועים הטובים ביותר עבור הבעיה?
+4. כיצד חוסר האיזון בין רכישות לאי רכישות משפיע על ביצועי המודלים?
+
+## המודלים שנבדקו
+
+בפרויקט נבדקו המודלים הבאים:
+
+- Logistic Regression
+- KNN
+- Decision Tree
+- Random Forest
+- SVM
+
+בנוסף, בוצעה בדיקה של השפעת חוסר איזון בין המחלקות, ונעשה ניסיון לשפר את Random Forest באמצעות Hyperparameter Tuning ו-Threshold Tuning.
+
+## מדדי הערכה
+
+מכיוון שהדאטה אינו מאוזן, לא הסתפקתי ב-Accuracy בלבד.
+
+נבדקו המדדים הבאים:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- ROC AUC
+
+## תוצאה מרכזית
+
+המודל הטוב ביותר היה Random Forest.
+
+התוצאה המרכזית של Random Forest:
+
+- Accuracy: 0.8893
+- Precision: 0.6265
+- Recall: 0.7068
+- F1-score: 0.6642
+- ROC AUC: 0.9225
+
+Random Forest נתן את האיזון הטוב ביותר בין זיהוי רכישות אמיתיות לבין הימנעות מתחזיות שגויות.
+
+## מבנה הפרויקט
+
+```text
+Online_Shoppers_Purchase_Prediction_Project/
+
+├── data/
+│   └── online_shoppers_intention.csv
+
+├── results/
+│   ├── model_comparison.csv
+│   ├── imbalance_comparison.csv
+│   ├── random_forest_feature_importance.csv
+│   └── graphs and confusion matrices
+
+├── report/
+│   ├── final_report_hebrew.md
+│   ├── report_summary_hebrew.md
+│   └── model_improvement_section_hebrew.md
+
+├── 02_eda.py
+├── 03_train_models.py
+├── 04_feature_importance.py
+├── 05_imbalance_comparison.py
+├── 08_improve_random_forest.py
+├── final_project_code.py
+├── main.py
+├── requirements.txt
+└── README.md
+```
+
+## איך להריץ את הפרויקט
+
+להתקנת הספריות הדרושות:
+
+```bash
+pip install -r requirements.txt
+```
+
+להרצת כל שלבי הפרויקט:
+
+```bash
+python3 main.py
+```
+
+אפשר גם להריץ כל שלב בנפרד:
+
+```bash
+python3 02_eda.py
+python3 03_train_models.py
+python3 04_feature_importance.py
+python3 05_imbalance_comparison.py
+python3 08_improve_random_forest.py
+```
+
+## מסקנה
+
+ניתן לחזות כוונת רכישה ברמה טובה יחסית לפי נתוני התנהגות של המשתמש באתר.
+
+המאפיינים החשובים ביותר קשורים לערך הדפים, משך השהייה בדפי מוצר, מספר דפי המוצר ושיעורי היציאה.
