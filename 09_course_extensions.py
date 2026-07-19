@@ -55,8 +55,20 @@ def load_data():
 def build_preprocessor():
     X, _ = load_data()
 
-    categorical_cols = X.select_dtypes(include=["object", "category", "bool"]).columns.tolist()
-    numeric_cols = [col for col in X.columns if col not in categorical_cols]
+    categorical_cols = [
+        "Month",
+        "OperatingSystems",
+        "Browser",
+        "Region",
+        "TrafficType",
+        "VisitorType",
+        "Weekend",
+    ]
+    numeric_cols = [
+        col
+        for col in X.columns
+        if col not in categorical_cols
+    ]
 
     numeric_transformer = Pipeline(steps=[
         ("imputer", SimpleImputer(strategy="median")),

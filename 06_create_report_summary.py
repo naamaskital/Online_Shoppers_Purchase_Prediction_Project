@@ -93,7 +93,7 @@ with open("report/report_summary_hebrew.md", "w", encoding="utf-8") as f:
     )
     f.write(
         "בנוסף, כאשר השתמשנו ב-class_weight='balanced', ניתן לראות שבחלק מהמודלים ה-Recall השתפר משמעותית. "
-        "לדוגמה, ב-Logistic Regression ה-Recall עלה מ-0.356 ל-0.749. "
+        "לדוגמה, ב-Logistic Regression ה-Recall עלה מ-0.3586 ל-0.7435. "
         "כלומר, המודל המאוזן הצליח לזהות הרבה יותר ביקורים שהסתיימו ברכישה.\n\n"
     )
 

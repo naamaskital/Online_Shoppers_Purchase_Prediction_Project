@@ -23,8 +23,21 @@ df = pd.read_csv("data/online_shoppers_intention.csv")
 X = df.drop("Revenue", axis=1)
 y = df["Revenue"].astype(int)
 
-numeric_features = X.select_dtypes(include=["int64", "float64"]).columns.tolist()
-categorical_features = X.select_dtypes(include=["object", "bool"]).columns.tolist()
+categorical_features = [
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend",
+]
+
+numeric_features = [
+    column
+    for column in X.columns
+    if column not in categorical_features
+]
 
 try:
     encoder = OneHotEncoder(handle_unknown="ignore", sparse_output=False)

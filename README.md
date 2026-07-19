@@ -65,11 +65,11 @@
 
 התוצאה המרכזית של Random Forest:
 
-- Accuracy: 0.8893
-- Precision: 0.6265
-- Recall: 0.7068
-- F1-score: 0.6642
-- ROC AUC: 0.9225
+- Accuracy: 0.8901
+- Precision: 0.6312
+- Recall: 0.6990
+- F1-score: 0.6634
+- ROC AUC: 0.9191
 
 Random Forest נתן את האיזון הטוב ביותר בין זיהוי רכישות אמיתיות לבין הימנעות מתחזיות שגויות.
 
@@ -122,13 +122,13 @@ Online_Shoppers_Purchase_Prediction_Project/
 pip install -r requirements.txt
 ```
 
-להרצת כל שלבי הפרויקט:
+להרצת ניתוח ראשוני של המאגר:
 
 ```bash
 python3 main.py
 ```
 
-אפשר גם להריץ כל שלב בנפרד:
+להרצת שלבי הניתוח והאימון המלאים לפי הסדר:
 
 ```bash
 python3 02_eda.py

@@ -6,3 +6,5 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 .DS_Store
+logs/
+report/*.before_update.md
