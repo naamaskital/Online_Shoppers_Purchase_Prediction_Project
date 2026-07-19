@@ -55,7 +55,7 @@ Online_Shoppers_Purchase_Prediction_Project/
 │   ├── random_forest_feature_importance.csv
 │   └── generated figures and classification reports
 ├── report/
-│   └── project documentation
+│   └── final_report_hebrew.md
 ├── requirements.txt
 └── README.md
 ```
