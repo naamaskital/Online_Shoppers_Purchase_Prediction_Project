@@ -178,18 +178,6 @@ https://github.com/naamaskital/Online_Shoppers_Purchase_Prediction_Project
 * Git
 * GitHub
 
-`pandas` שימשה לטעינת הנתונים ולניתוחם.
-
-`scikit-learn` שימשה עבור:
-
-* חלוקת הנתונים.
-* preprocessing.
-* Pipeline.
-* אימון המודלים.
-* Grid Search.
-* PCA.
-* חישוב מדדי ההערכה.
-
 ---
 
 ## 6. מבנה הקוד
