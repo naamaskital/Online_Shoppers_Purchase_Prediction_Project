@@ -8,3 +8,4 @@ __pycache__/
 .DS_Store
 logs/
 report/*.before_update.md
+backup_before_cleanup/
