@@ -240,12 +240,12 @@ pip install -r requirements.txt
 Run the scripts from the project root directory in the following order:
 
 ```bash
-python scripts/01_eda.py
-python scripts/02_train_models.py
-python scripts/03_feature_importance.py
-python scripts/04_imbalance_analysis.py
-python scripts/05_random_forest_improvement.py
-python scripts/06_course_extensions.py
+python3 scripts/01_eda.py
+python3 scripts/02_train_models.py
+python3 scripts/03_feature_importance.py
+python3 scripts/04_imbalance_analysis.py
+python3 scripts/05_random_forest_improvement.py
+python3 scripts/06_course_extensions.py
 ```
 
 The generated tables, reports, and figures are saved in the `results/` directory.
