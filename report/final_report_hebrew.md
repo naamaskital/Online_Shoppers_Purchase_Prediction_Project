@@ -190,10 +190,6 @@ https://github.com/naamaskital/Online_Shoppers_Purchase_Prediction_Project
 * PCA.
 * חישוב מדדי ההערכה.
 
-`Matplotlib` שימשה ליצירת גרפים.
-
-Git ו־GitHub שימשו לניהול גרסאות הקוד ולהצגת הפרויקט.
-
 ---
 
 ## 6. מבנה הקוד
