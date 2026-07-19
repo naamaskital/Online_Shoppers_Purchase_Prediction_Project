@@ -1,67 +1,92 @@
-# Results Directory
+# Results
 
-This directory contains the tables, figures, and evaluation reports generated during the project experiments.
+This directory contains the tables, reports, and figures generated during the project.
 
-The CSV files are the main source for the numerical results presented in the project README and final report.
+## Exploratory Data Analysis
 
-## Main Result Files
+The EDA outputs include:
 
-### `model_comparison.csv`
+- Revenue-class distribution.
+- Average numerical feature values by purchase outcome.
+- Purchase rates across categorical variables.
+- Tables and figures describing visitor behavior.
 
-Comparison of the five main classification algorithms:
+Main files include:
 
-* Logistic Regression
-* K-Nearest Neighbors
-* Decision Tree
-* Random Forest
-* Linear SVM
+- `mean_features_by_revenue.csv`
+- `revenue_distribution.png`
+- `avg_*_by_revenue.png`
+- `*_vs_revenue.csv`
+- `purchase_rate_by_*.png`
 
-The file includes accuracy, precision, recall, F1, ROC AUC, and runtime.
+## Main Model Comparison
 
-### `imbalance_comparison.csv`
+`model_comparison.csv` contains the evaluation results for:
 
-Comparison between:
+- Logistic Regression
+- K-Nearest Neighbors
+- Decision Tree
+- Random Forest
+- Linear SVM
 
-* A dummy majority-class classifier.
-* Models trained without class balancing.
-* Models trained with class balancing.
+The reported metrics are:
 
-This experiment demonstrates why accuracy alone is not sufficient for the dataset.
+- Accuracy
+- Precision
+- Recall
+- F1
+- ROC AUC
+- Runtime
 
-### `random_forest_feature_importance.csv`
+Additional outputs include:
 
-Random Forest feature-importance values in descending order.
+- `classification_reports.txt`
+- `confusion_matrix_*.png`
 
-The values describe the contribution of the input features to the fitted Random Forest model. They should not be interpreted as causal effects.
+## Class-Imbalance Analysis
 
-### `improved_random_forest_results.csv`
+`imbalance_comparison.csv` compares:
 
-Results from the Random Forest parameter-tuning and threshold-adjustment experiment.
+- A majority-class Dummy Classifier.
+- Models trained without class weighting.
+- Models trained with balanced class weights.
 
-The file includes:
+This experiment demonstrates why Accuracy alone is not sufficient for the dataset.
 
-* Baseline Random Forest.
-* Tuned Random Forest with threshold 0.50.
-* Tuned Random Forest with threshold 0.45.
+## Feature Importance
 
-### `course_extensions_adaboost_results.csv`
+The Random Forest feature-importance analysis is stored in:
 
-Evaluation results for the AdaBoost extension.
+- `random_forest_feature_importance.csv`
+- `random_forest_top_features.png`
 
-## Figures and Text Reports
+Feature importance describes how the fitted model used each feature. It does not establish a causal relationship.
 
-The directory also contains generated visualizations and classification reports, including:
+## Random Forest Improvement Experiment
 
-* Target distribution.
-* Model-comparison charts.
-* Confusion matrices.
-* Feature-importance charts.
-* Class-imbalance comparisons.
-* PCA-related visualizations.
-* Per-model classification reports.
+The parameter-search and threshold-tuning outputs are:
+
+- `improved_random_forest_results.csv`
+- `threshold_tuning_validation.csv`
+- `threshold_tuning_plot.png`
+
+The experiment compares the baseline Random Forest with a tuned model and different decision thresholds.
+
+## Course Extensions
+
+AdaBoost results are stored in:
+
+- `course_extensions_adaboost_results.csv`
+- `model_comparison_with_adaboost.csv`
+
+PCA results are stored in:
+
+- `pca_explained_variance.csv`
+- `pca_projection.csv`
+- `pca_projection.png`
 
 ## Notes
 
-* Runtime values depend on the computer and software environment.
-* The reported project metrics are taken directly from the CSV files in this directory.
-* Files should not be manually edited after an experiment. Interpretations and conclusions belong in the main README or final report.
+The numerical values presented in the main README and final report are taken directly from the CSV files in this directory.
+
+Runtime values can vary between computers and software environments.

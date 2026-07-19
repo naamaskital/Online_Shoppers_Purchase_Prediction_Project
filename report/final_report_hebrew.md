@@ -199,7 +199,6 @@ Git ו־GitHub שימשו לניהול גרסאות הקוד ולהצגת הפר
 ## 6. מבנה הקוד
 
 הפרויקט מחולק למספר סקריפטים, כאשר כל סקריפט מבצע שלב מסוים בתהליך.
-
 ```text
 Online_Shoppers_Purchase_Prediction_Project/
 ├── data/
@@ -212,13 +211,22 @@ Online_Shoppers_Purchase_Prediction_Project/
 │   ├── 05_random_forest_improvement.py
 │   └── 06_course_extensions.py
 ├── results/
+│   ├── README.md
 │   ├── model_comparison.csv
+│   ├── classification_reports.txt
+│   ├── confusion_matrix_*.png
 │   ├── imbalance_comparison.csv
 │   ├── random_forest_feature_importance.csv
+│   ├── random_forest_top_features.png
 │   ├── improved_random_forest_results.csv
+│   ├── threshold_tuning_validation.csv
+│   ├── threshold_tuning_plot.png
 │   ├── course_extensions_adaboost_results.csv
+│   ├── model_comparison_with_adaboost.csv
+│   ├── pca_explained_variance.csv
 │   ├── pca_projection.csv
-│   └── גרפים ודוחות נוספים
+│   ├── pca_projection.png
+│   └── additional EDA tables and figures
 ├── report/
 │   └── final_report_hebrew.md
 ├── README.md
