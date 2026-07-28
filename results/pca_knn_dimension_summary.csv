@@ -1,0 +1,2 @@
+Original_dataset_features,Features_after_preprocessing,Variance_target,Selected_PCA_components,Actual_cumulative_variance
+17,75,0.9,20,0.9084501657816093

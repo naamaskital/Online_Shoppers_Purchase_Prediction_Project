@@ -1,0 +1,11 @@
+{
+    "best_parameters": {
+        "classifier__n_neighbors": 3,
+        "classifier__weights": "distance",
+        "pca__n_components": 0.85
+    },
+    "best_cross_validation_f1": 0.535451754651642,
+    "grid_search_runtime_seconds": 122.77626085281372,
+    "selected_pca_components": 15,
+    "selected_pca_explained_variance": 0.8552018505531914
+}
