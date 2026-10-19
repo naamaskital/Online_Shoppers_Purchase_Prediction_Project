@@ -183,6 +183,10 @@ The following algorithms were evaluated:
 
 ### Results
 
+![Baseline model comparison: F1 and ROC AUC](docs/model_comparison.svg)
+
+*The chart shows the baseline test-set F1 for the positive (purchase) class and ROC AUC, using the reported values below. These metrics measure different aspects of performance and should not be interpreted as interchangeable.*
+
 | Model               | Accuracy |  Precision |     Recall |         F1 |    ROC AUC |
 | ------------------- | -------: | ---------: | ---------: | ---------: | ---------: |
 | Random Forest       |   0.8901 |     0.6312 |     0.6990 | **0.6634** | **0.9191** |
